@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>To-Do List</h1>
-<input type="text" id="input-task">
-<button id="add-task-button" onclick="addTaskBtn()">ADD TASK</button>
+<h1 id="main-title">To-Do List</h1>
+<label for="input-task">
+    <input type="text" id="input-task" placeholder="Add Task">
+    <button id="add-task-button" onclick="addTaskBtn()">ADD</button>
+</label>
 <ul id="task-list">
 </ul>
 </body>

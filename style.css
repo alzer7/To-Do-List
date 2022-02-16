@@ -1,8 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+#main-title {
+    margin-top: 2rem;
+}
+
+
+label {
+    display: flex;
+}
+
 #input-task {
+    margin: 12px 16px;
     border: none;
     border-bottom: 2px solid #71597d;
-    font-size: 20px;
-    margin: 12px 16px;
+    width: 40vw;
+    font-size: 1.3rem;
+
+}
+
+#input-task::placeholder {
+    color: #c0c0c0;
 }
 
 #input-task:focus:enabled {
@@ -15,8 +46,8 @@
     background-color: #9b78d5;
     border: none;
     font-weight: 600;
-    font-size: 20px;
-    padding: 12px 20px;
+    font-size: 1.2rem;
+    padding: .7rem 1rem;
 }
 
 #add-task-button:hover {
@@ -40,14 +71,20 @@ li > input[type=checkbox]:checked + span {
     text-decoration: line-through;
 }
 .task {
-    width: 300px;
+    width: 40vw;
     padding: 4px;
 }
 
 .delete-btn {
-    background-color: red;
+    background-color: darkred;
+    color: white;
     border: none;
     width: 20px;
     height: 20px;
     border-radius: 40px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #aa0000;
 }
