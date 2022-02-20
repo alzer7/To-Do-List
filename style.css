@@ -27,14 +27,15 @@ label {
     margin: 0 .2rem;
     padding: 4px;
     border: none;
-    border-bottom: 2px solid #71597d;
+    border-bottom: 2px solid #757;
     width: 40vw;
     font-size: 1.3rem;
+    caret-color: #a6f;
 
 }
 
 #input-task::placeholder {
-    color: #c0c0c0;
+    color: #ccc;
 }
 
 #input-task:focus:enabled {
@@ -68,9 +69,11 @@ ul > li {
 li > input {
     margin: 8px;
 }
+
 li > input[type=checkbox]:checked + span {
     text-decoration: line-through;
 }
+
 .task {
     width: 40vw;
     padding: 4px;
